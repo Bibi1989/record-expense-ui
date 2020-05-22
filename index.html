@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d4ec1aef3e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- nav bar -->
+      <nav
+        class="navbar navbar-light bg-light custom_nav_style d-flex justify-content-between mb-2"
+        style="box-shadow: 0 2px 15px #ccc;"
+      >
+        <a class="navbar-brand"><img src="./assets/logo.PNG" /></a>
+        <img src="./assets/ham.PNG" width="80px" class="img_menu" />
+        <div class="d-flex">
+          <form class="form-inline">
+            <input
+              class="form-control mr-sm-4"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              style="border-radius: 30px;"
+            />
+          </form>
+          <img
+            class="mr-3"
+            src="./assets/alarm2.PNG"
+            height="30px"
+            style="margin-top: 6px;"
+          />
+          <img class="mr-3" src="./assets/profile.PNG" />
+          <div class="logout">
+            <p style="margin: 0 !important;">Seun James</p>
+            <a href="#!">Log out</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- main container -->
+      <div class="container main">
+        <div class="row">
+          <!-- side bar -->
+          <div class="col side_bar border">
+            <div class="row">
+              <div
+                class="col"
+                style="
+                  height: 60px;
+                  background-color: white;
+                  border-bottom: 1px solid #ccc;
+                  margin-bottom: 0 !important;
+                  padding: 1em !important;
+                "
+              >
+                <p style="color: #0979a2; font-weight: 700;">Boldseams</p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col d-flex flex-column justify-content-center align-items-center py-1"
+                style="
+                  height: 60px;
+                  background-color: white;
+                  border-bottom: 1px solid #ccc;
+                "
+              >
+                <div style="width: 28px; height: 28px;">
+                  <img src="./assets/dashboard.PNG" width="100%" />
+                </div>
+                <span style="font-size: 14px;">Dashboard</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div
+                class="col d-flex flex-column justify-content-center align-items-center py-1"
+                style="
+                  height: 60px;
+                  background-color: white;
+                  border-bottom: 1px solid #ccc;
+                "
+              >
+                <div style="width: 28px; height: 28px;">
+                  <img src="./assets/record.PNG" width="100%" />
+                </div>
+                <span style="font-size: 14px;">Record Sale</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div
+                class="col d-flex flex-column justify-content-center align-items-center py-1"
+                style="
+                  height: 60px;
+                  background-color: white;
+                  border-bottom: 1px solid #ccc;
+                "
+              >
+                <div style="width: 28px; height: 28px;">
+                  <img src="./assets/expense.PNG" width="100%" />
+                </div>
+                <span style="font-size: 12px;">Record Expense</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div
+                class="col d-flex flex-column justify-content-center align-items-center py-1"
+                style="
+                  height: 60px;
+                  background-color: white;
+                  border-bottom: 1px solid #ccc;
+                "
+              >
+                <div style="width: 28px; height: 28px;">
+                  <img src="./assets/sales.PNG" width="100%" />
+                </div>
+                <span style="font-size: 14px;">View Sales</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div
+                class="col d-flex flex-column justify-content-center align-items-center py-1"
+                style="
+                  height: 60px;
+                  background-color: white;
+                  border-bottom: 1px solid #ccc;
+                "
+              >
+                <div style="width: 28px; height: 28px;">
+                  <img src="./assets/view.PNG" width="100%" />
+                </div>
+                <span style="font-size: 13px;">View Expenses</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div
+                class="col d-flex flex-column justify-content-center align-items-center py-1"
+                style="
+                  height: 60px;
+                  background-color: white;
+                  border-bottom: 1px solid #ccc;
+                "
+              >
+                <div style="width: 28px; height: 28px;">
+                  <img src="./assets/action.PNG" width="100%" />
+                </div>
+                <span style="font-size: 14px;">More Action</span>
+              </div>
+            </div>
+          </div>
+          <!-- article page -->
+          <div class="col article">
+            <!-- record expense -->
+            <div class="row record_expenses">
+              <div class="col col-sm-10 expense">
+                <span>Record Expenses</span>
+              </div>
+            </div>
+
+            <!-- sub menu -->
+
+            <div class="row bg-dark text-light row_menu">
+              <div class="col col-lg-3"># Item</div>
+              <div class="col">Unit</div>
+              <div class="col" style="font-size: 12px;">Unit Price</div>
+              <div class="col">Quantity</div>
+              <div class="col">Amount</div>
+              <div class="col col-lg-2">Amount Paid</div>
+              <div class="col col-lg-2">Vendor</div>
+              <div class="col"></div>
+            </div>
+
+            <div class="mobile">
+              <!-- first row -->
+              <div
+                class="card py-1"
+                style="border: 1px solid #3191b3 !important; margin-top: 0.5em;"
+              >
+                <div class="container">
+                  <div class="row item_row bor d-flex justify-content-between">
+                    <div class="col col-lg-6 col-sm-10">
+                      <img src="./assets/menu.PNG" /><span>1</span>
+                      <span>Embroidery Materials</span>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <i class="fas fa-edit"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class="row item_row bor">
+                    <div class="col">
+                      <span class="span">1 Yard x #1,500</span>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <span class="span"># 1,500</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class="row item_row bor">
+                    <div class="col col-lg-2" style="color: #4197b7;">
+                      # 1,500 (cash)
+                    </div>
+                    <div class="col col-lg-2 d-flex justify-content-end">
+                      <span
+                        style="
+                          color: #3191b3;
+                          border-bottom: 1px solid #3191b3;
+                        "
+                        >Becky Tailor</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- second row -->
+              <div
+                class="card py-1"
+                style="border: 1px solid #3191b3 !important; margin-top: 0.5em;"
+              >
+                <div class="container">
+                  <div class="row item_row bor d-flex justify-content-between">
+                    <div class="col col-lg-6 col-sm-10">
+                      <img src="./assets/menu.PNG" /><span>1</span>
+                      <span>Buttons</span>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <i class="fas fa-edit"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class="row item_row bor">
+                    <div class="col">
+                      <span class="span">1 Dozen x #1,500/Unit</span>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <span class="span"># 1,500</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class="row item_row bor">
+                    <div class="col col-lg-2" style="color: #4197b7;">
+                      # 1,500 (Bank)
+                    </div>
+                    <div class="col col-lg-2 d-flex justify-content-end">
+                      <span
+                        style="
+                          color: #3191b3;
+                          border-bottom: 1px solid #3191b3;
+                        "
+                        >Choose Vendor</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Third row -->
+              <div
+                class="card py-1"
+                style="border: 1px solid #3191b3 !important; margin-top: 0.5em;"
+              >
+                <div class="container">
+                  <div class="row item_row bor d-flex justify-content-between">
+                    <div class="col col-lg-6 col-sm-10">
+                      <img src="./assets/menu.PNG" /><span>1</span>
+                      <span>Ankara Material</span>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <i class="fas fa-edit"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class="row item_row bor">
+                    <div class="col">
+                      <span class="span">1 Yard x #1,500/Unit</span>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <span class="span"># 1,500</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class="row item_row bor">
+                    <div class="col col-lg-2" style="color: red;">
+                      # 500 (cash)
+                    </div>
+                    <div class="col col-lg-2 d-flex justify-content-end">
+                      <span
+                        style="
+                          color: #3191b3;
+                          border-bottom: 1px solid #3191b3;
+                        "
+                        >Choose Vendor</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- fourth row -->
+              <div
+                class="card py-1"
+                style="border: 1px solid #3191b3 !important; margin-top: 0.5em;"
+              >
+                <div class="container">
+                  <div class="row item_row bor d-flex justify-content-between">
+                    <div class="col col-lg-6 col-sm-10">
+                      <img src="./assets/menu.PNG" /><span>1</span>
+                      <span>George Material</span>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <i class="fas fa-edit"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class="row item_row bor">
+                    <div class="col">
+                      <span class="span">1 Yard x #1,500</span>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <span class="span"># 1,500</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class="row item_row bor">
+                    <div class="col col-lg-2" style="color: red;">
+                      (Credit)
+                    </div>
+                    <div class="col col-lg-2 d-flex justify-content-end">
+                      <span
+                        style="
+                          color: #3191b3;
+                          border-bottom: 1px solid #3191b3;
+                        "
+                        >Suswam Fabrics</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- fifth row -->
+              <div
+                class="card py-1"
+                style="border: 1px solid #3191b3 !important; margin-top: 0.5em;"
+              >
+                <div class="container">
+                  <div class="row item_row bor d-flex justify-content-between">
+                    <div class="col col-lg-6 col-sm-10">
+                      <img src="./assets/menu.PNG" /><span>1</span>
+                      <span>Black Thread</span>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <i class="fas fa-edit"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class="row item_row bor">
+                    <div class="col">
+                      <span class="span">1 Carton x #1,500/Unit</span>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <span class="span"># 1,500</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class="row item_row bor">
+                    <div class="col col-lg-2" style="color: #4197b7;">
+                      # 1,500 (cash)
+                    </div>
+                    <div class="col col-lg-2 d-flex justify-content-end">
+                      <span
+                        style="
+                          color: #3191b3;
+                          border-bottom: 1px solid #3191b3;
+                        "
+                        >Choose Vendor</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- sixth row -->
+              <div
+                class="card py-1"
+                style="border: 1px solid #3191b3 !important; margin-top: 0.5em;"
+              >
+                <div class="container">
+                  <div class="row item_row bor d-flex justify-content-between">
+                    <div class="col col-lg-6 col-sm-10">
+                      <img src="./assets/menu.PNG" /><span>1</span>
+                      <span>Fuel (Car)</span>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <i class="fas fa-edit"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class="row item_row bor">
+                    <div class="col">
+                      <span class="span">1 Yard x #1,500</span>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <span class="span"># 1,500</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class="row item_row bor">
+                    <div class="col col-lg-2" style="color: #4197b7;">
+                      # 1,500 (cash)
+                    </div>
+                    <div class="col col-lg-2 d-flex justify-content-end">
+                      <span
+                        style="
+                          color: #3191b3;
+                          border-bottom: 1px solid #3191b3;
+                        "
+                        >Choose Vendor</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="desktop">
+              <!-- first row -->
+              <div class="row item_row bor">
+                <div class="col col-lg-3 col-xs-6">
+                  <img src="./assets/menu.PNG" /><span
+                    style="padding-left: 0.7em; padding-right: 1em;"
+                    >1</span
+                  >
+                  <span>Embroidery Materials</span>
+                </div>
+                <div class="col">
+                  <select>
+                    <option>Yard</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <span class="span"># 1,500</span>
+                </div>
+                <div class="col">
+                  <span class="span">1</span>
+                </div>
+                <div class="col col-lg">
+                  <span># 1,500</span>
+                </div>
+                <div class="col col-lg-2" style="color: #4197b7;">
+                  # 1,500 (cash)
+                </div>
+                <div class="col col-lg-2">
+                  <span
+                    style="color: #3191b3; border-bottom: 1px solid #3191b3;"
+                    >Becky Tailor</span
+                  >
+                </div>
+                <div class="col">
+                  <img src="./assets/trash.PNG" />
+                </div>
+              </div>
+
+              <!-- second row -->
+              <div class="row item_row">
+                <div class="col col-lg-3 col-sm-12">
+                  <img src="./assets/menu.PNG" /><span
+                    style="padding-left: 0.7em; padding-right: 1em;"
+                    >2</span
+                  >
+                  <span>Buttons</span>
+                </div>
+                <div class="col">
+                  <select>
+                    <option>Dozen</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <span class="span"># 1,500</span>
+                </div>
+                <div class="col">
+                  <span class="span">1</span>
+                </div>
+                <div class="col">
+                  <span># 1,500</span>
+                </div>
+                <div class="col col-lg-2" style="color: #4197b7;">
+                  # 1,500 (cash)
+                </div>
+                <div class="col col-lg-2">
+                  <span
+                    style="color: #3191b3; border-bottom: 1px solid #3191b3;"
+                    >Choose</span
+                  >
+                </div>
+                <div class="col">
+                  <img src="./assets/trash.PNG" />
+                </div>
+              </div>
+
+              <!-- third row -->
+              <div class="row item_row">
+                <div class="col col-lg-3">
+                  <img src="./assets/menu.PNG" /><span
+                    style="padding-left: 0.7em; padding-right: 1em;"
+                    >3</span
+                  >
+                  <span>Ankara Material</span>
+                </div>
+                <div class="col">
+                  <select>
+                    <option>Yard</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <span class="span"># 1,500</span>
+                </div>
+                <div class="col">
+                  <span class="span">1</span>
+                </div>
+                <div class="col">
+                  <span># 1,500</span>
+                </div>
+                <div class="col col-lg-2">
+                  <span style="color: red; border-bottom: 1px solid red;"
+                    ># 500 (Cash)</span
+                  >
+                </div>
+                <div class="col col-lg-2">
+                  <span
+                    style="color: #3191b3; border-bottom: 1px solid #3191b3;"
+                    >Becky Tailor</span
+                  >
+                </div>
+                <div class="col">
+                  <img src="./assets/trash.PNG" />
+                </div>
+              </div>
+
+              <!-- forth row -->
+              <div class="row item_row">
+                <div class="col col-lg-3">
+                  <img src="./assets/menu.PNG" /><span
+                    style="padding-left: 0.7em; padding-right: 1em;"
+                    >4</span
+                  >
+                  <span>George Material</span>
+                </div>
+                <div class="col">
+                  <select>
+                    <option>Yard</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <span class="span"># 1,500</span>
+                </div>
+                <div class="col">
+                  <span class="span" class="">1</span>
+                </div>
+                <div class="col">
+                  <span># 1,500</span>
+                </div>
+                <div class="col col-lg-2">
+                  <span style="color: red; border-bottom: 1px solid red;"
+                    >(Credit)</span
+                  >
+                </div>
+                <div class="col col-lg-2">
+                  <span
+                    style="color: #3191b3; border-bottom: 1px solid #3191b3;"
+                    >Suswam Fabrics</span
+                  >
+                </div>
+                <div class="col">
+                  <img src="./assets/trash.PNG" />
+                </div>
+              </div>
+
+              <!-- fifth row -->
+              <div class="row item_row">
+                <div class="col col-lg-3">
+                  <img src="./assets/menu.PNG" /><span
+                    style="padding-left: 0.7em; padding-right: 1em;"
+                    >5</span
+                  >
+                  <span>Black Thread</span>
+                </div>
+                <div class="col">
+                  <select>
+                    <option>Carton</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <span class="span"># 1,500</span>
+                </div>
+                <div class="col">
+                  <span class="span">1</span>
+                </div>
+                <div class="col">
+                  <span># 1,500</span>
+                </div>
+                <div class="col col-lg-2">
+                  <span style="color: red; border-bottom: 1px solid red;"
+                    >(Credit)</span
+                  >
+                </div>
+                <div class="col col-lg-2">
+                  <span
+                    style="color: #3191b3; border-bottom: 1px solid #3191b3;"
+                    >Becky Tailor</span
+                  >
+                </div>
+                <div class="col">
+                  <img src="./assets/trash.PNG" />
+                </div>
+              </div>
+
+              <!-- sixth row -->
+              <!--  flex-row -->
+              <div class="row item_row">
+                <div class="col col-lg-3">
+                  <img src="./assets/menu.PNG" /><span
+                    style="padding-left: 0.7em; padding-right: 1em;"
+                    >6</span
+                  >
+                  <span>Fuel (Car)</span>
+                </div>
+                <div class="col">
+                  <select>
+                    <option>Litres</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <span class="span"># 1,500</span>
+                </div>
+                <div class="col">
+                  <span class="span">1</span>
+                </div>
+                <div class="col">
+                  <span># 1,500</span>
+                </div>
+                <div class="col col-lg-2" style="color: #3191b3;">
+                  <span
+                    style="color: #3191b3; border-bottom: 1px solid #3191b3;"
+                    ># 1,500 (cash)</span
+                  >
+                </div>
+                <div class="col col-lg-2" style="width: 150px;">
+                  <span
+                    style="color: #3191b3; border-bottom: 1px solid #3191b3;"
+                    >Choose</span
+                  >
+                </div>
+                <div class="col">
+                  <img src="./assets/trash.PNG" />
+                </div>
+              </div>
+            </div>
+
+            <!-- add another expense -->
+            <div class="row py-3">
+              <div class="col d-flex align-items-center">
+                <div class="plus"><i class="fas fa-plus"></i></div>
+                <p class="add_expense">Add Another Expense</p>
+              </div>
+            </div>
+
+            <!-- Cash Bank Total credit -->
+            <div class="row total-cash pt-1 mb-2">
+              <div class="col pb-2">Cash: #3,500</div>
+              <div class="col pb-2">Bank: 1,500</div>
+              <div class="col pb-2">Credit: #4,000</div>
+              <div class="col pb-2">Total: #9,000</div>
+            </div>
+
+            <!-- goods and services -->
+            <div class="row good-service">
+              <p style="line-height: 44px; margin: 0 !important;">
+                Have you received the goods/services?
+              </p>
+              <button
+                class="btn"
+                style="
+                  background-color: white;
+                  border: 1px solid #ccc;
+                  margin-left: 2em;
+                "
+              >
+                Yes
+                <i class="fas fa-chevron-down" style="margin-left: 1.5em;"></i>
+              </button>
+            </div>
+
+            <div class="row outstand py-2 my-2">
+              <div class="col col-lg-5 d-flex">
+                <span>Outstanding Payment</span>
+                <span style="padding-left: 1em; font-weight: 500;"
+                  >Becky Tailors (N 1,000)</span
+                >
+              </div>
+              <div class="col col-lg-4 d-flex">
+                <span>Payment Due</span>
+                <span
+                  style="
+                    padding-left: 1em;
+                    color: #3191b3;
+                    border-bottom: 1px solid #3191b3;
+                  "
+                  >Today (April 23, 2020)</span
+                >
+              </div>
+              <div class="col col-lg-3 d-flex">
+                <span style="color: #3191b3; border-bottom: 1px solid #3191b3;"
+                  >Advanced</span
+                >
+              </div>
+            </div>
+
+            <!-- second card -->
+            <div class="row outstand py-2 my-2">
+              <div class="col col-lg-5 d-flex">
+                <span>Outstanding Payment</span>
+                <span style="padding-left: 1em; font-weight: 500;"
+                  >Suswam Fabrics (N 1,500)</span
+                >
+              </div>
+              <div class="col col-lg-4 d-flex">
+                <span>Payment Due</span>
+                <span
+                  style="
+                    padding-left: 1em;
+                    color: #3191b3;
+                    border-bottom: 1px solid #3191b3;
+                  "
+                  >Today (April 23, 2020)</span
+                >
+              </div>
+              <div class="col col-lg-3 d-flex">
+                <span style="color: #3191b3; border-bottom: 1px solid #3191b3;"
+                  >Advanced</span
+                >
+              </div>
+            </div>
+
+            <div class="row py-5">
+              <div class="col order">
+                <button
+                  class="btn btn-primary"
+                  style="
+                    background: linear-gradient(to right, #0979a2, #608266);
+                  "
+                >
+                  Save Expense
+                </button>
+                <button
+                  class="btn"
+                  style="background-color: white; border: 1px solid #999;"
+                >
+                  Create Order <i class="fas fa-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

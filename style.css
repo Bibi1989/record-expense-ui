@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+}
+
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.plus {
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  background-color: #0979a2;
+  text-align: center;
+  line-height: 1.2em;
+  color: white;
+  margin-right: 1em;
+}
+
+.wrapper {
+  width: 100%;
+  border: 1px solid #333;
+  margin: auto;
+}
+
+.desktop {
+  display: none;
+}
+
+.navbar-brand img {
+  display: none;
+}
+
+.img_menu {
+  position: absolute;
+  left: 1em;
+}
+
+.form-inline input {
+  display: none;
+}
+
+.logout {
+  display: none;
+}
+
+.side_bar {
+  display: none;
+}
+
+.article {
+  margin: 0 !important;
+  padding: 1em !important;
+}
+
+.row.row_menu {
+  display: none;
+}
+
+.record_expenses {
+  background-color: #d1e8f0;
+  display: block;
+  height: 38px;
+  line-height: 38px;
+  margin: 0 !important;
+}
+
+.row .add_expense {
+  color: #4197b7;
+  margin: 0;
+  padding-left: 1em;
+}
+.row .fa-plus {
+  color: #fff;
+}
+
+.total-cash {
+  display: flex;
+  flex-direction: column;
+  background-color: #d1e8f0;
+}
+
+.good-service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f1f2f3;
+  padding-left: 0.8em;
+  min-height: 48px;
+  border: 1.5px solid #3191b3;
+  padding-bottom: 1em;
+}
+
+.outstand {
+  background-color: #f9e6ce;
+  border: 1.5px solid #3191b3;
+  border-radius: 0.3em;
+  margin-bottom: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.order button:first-child {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 1000px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .navbar-brand img {
+    display: inline-block;
+  }
+
+  .img_menu {
+    display: none;
+  }
+
+  .logout {
+    display: inline-block;
+  }
+
+  .side_bar {
+    display: block;
+  }
+
+  .row.row_menu {
+    display: flex;
+  }
+
+  .wrapper {
+    width: 1140px;
+    border: 1px solid #333;
+    margin: auto;
+  }
+
+  .article {
+    margin-left: 0.5em !important;
+    margin-right: 0.5em !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* nav bar style */
+  .custom_nav_style {
+    height: 60px;
+  }
+
+  /* main container style */
+
+  /* side bar styles */
+  .side_bar {
+    max-width: 120px !important;
+    height: 100%;
+    min-height: 110vh;
+  }
+
+  /* articles styles */
+  .record_expenses {
+    background-color: #d1e8f0;
+    display: block;
+    height: 38px;
+    max-width: 1000px;
+    line-height: 38px;
+    font-size: 16px;
+    margin-bottom: 0.5em !important;
+    padding: 0 !important;
+  }
+
+  .row_menu {
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+  }
+
+  .item_row {
+    font-size: 14px;
+    height: 48px;
+    border: 1px solid #999;
+    margin-bottom: 0.5em;
+    border-radius: 0.2em;
+    box-shadow: 0 2px 16px #ddd;
+    display: flex;
+    align-items: center;
+  }
+
+  .item_row col {
+    margin: 0;
+  }
+
+  .item_row.bor {
+    border: 1px solid #6fd0f0;
+    height: 48px;
+    margin-top: 0.5em;
+  }
+
+  .item_row p {
+    font-size: 14px;
+    border: 1px solid #999;
+  }
+  .item_row select {
+    font-size: 14px;
+    border: 1.5px solid #ccc;
+    border-radius: 0.3em;
+    padding: 0.15em;
+    width: 70px;
+  }
+
+  .item_row .span {
+    display: block;
+    font-size: 14px;
+    border: 1.5px solid #ccc;
+    height: 28px;
+    /* margin-top: 10px; */
+    line-height: 28px;
+    padding-left: 0.5em;
+    border-radius: 0.2em;
+  }
+  .item_row .span {
+    width: 60px;
+  }
+
+  .row .add_expense {
+    color: #4197b7;
+    margin: 0;
+    padding-left: 1em;
+  }
+  .row .fa-plus {
+    color: #fff;
+    font-size: 14px;
+    line-height: initial;
+  }
+
+  .total-cash {
+    flex-direction: row;
+  }
+
+  .good-service {
+    flex-direction: row !important;
+    line-height: 48px;
+    padding-top: 5px;
+    padding-bottom: 0em;
+  }
+  .good-service p {
+    margin: 0;
+  }
+
+  .outstand {
+    background-color: #f9e6ce;
+    border: 1.5px solid #3191b3;
+    border-radius: 0.3em;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .order {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .order button:last-child {
+    margin-left: 2em;
+  }
+
+  .order button:first-child {
+    margin-bottom: 0;
+  }
+}
